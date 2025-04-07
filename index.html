@@ -1,1 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweetobox</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Georgia', serif;
+      background: #f5f3f0;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      min-height: 400vh;
+    }
+
+     .top-nav {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-align: left;
+    }
+
+    .top-nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #7d4831;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .top-nav a:hover {
+      color: #555;
+    }
+
+    .top-image-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .top-image {
+      width: 40px;
+      height: 90;
+      transition: transform 0.2s;
+    }
+
+    .top-image:hover {
+      transform: scale(1.1);
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #e0ddd8, #f5f3f0);
+    }
+
+    .logo-text {
+      font-size: 2rem;
+      margin: 10px 0 0;
+    }
+
+    .subtext {
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+
+    .section {
+      height: calc(400vh / 3); /* 1/3 of the full viewport height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .section-1 {
+      background-color: #f5f3f0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .section-1 .text-content {
+      width: 50%;
+      text-align: left;
+      padding-right: 30px;
+    }
+
+    .section-1 .text-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .section-1 .text-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .section-1 .image-content {
+      width: 50%;
+      text-align: right;
+    }
+
+    .section-1 img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+  .section-2 {
+    height: auto; /* 2/3 of the full viewport height */
+    background-color: #e8e6e3;
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-2  .section-heading {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 30px;
+  }
+    
+  .section-2-content {
+     display: flex;
+     align-items: center;   /* Vertically centers items */
+     justify-content: center; /* Centers items horizontally */
+     gap: 60px;             /* Space between image and text */
+     max-width: 1200px;     /* Prevents overly wide layouts */
+     margin: 0 auto;        /* Centers container */
+  }
+
+  .section-2 .cookie-img {
+    width: 100%;       /* Responsive width (respects max-width) */
+    max-width: 600px;  /* Limits maximum size */
+    height: auto;      /* Maintains aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    object-fit: cover; /* Prevents distortion */
+  }
+
+  .section-2 .cookie-text {
+    max-width: 45%;
+    font-family: Georgia, serif;
+    color: #333;
+  }
+
+  .section-2 .cookie-text h3 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .section-2 .cookie-text hr {
+    border: none;
+    border-top: 2px solid #444;
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .section-2 .cookie-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+    .section-3 {
+      background-color: #e9e6e2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+
+    footer {
+      background: linear-gradient(to top, #ccc, #f7f4f1);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .footer-icons img {
+      width: 40px;
+      margin: 0 10px;
+    }
+
+    .contact-info {
+      margin-top: 10px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="top-nav">
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+
+    <!-- Clickable top-right image -->
+    <a href="index.html" class="top-image-link">
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Home Icon" class="top-image" />
+    </a>
+
+    <div class="logo-text">SWEETOBOX</div>
+    <div class="subtext">MADE WITH LOVE</div>
+  </header>
+
+  <section class="section section-1">
+    <div class="text-content">
+      <h1>Welcome to
+          your favorite home bakery
+      </h1>
+      <p>
+Welcome to my cozy little home bakery, where every treat
+        is baked with care and a whole lot of love. Whether you're a
+        longtime dessert lover or just discovering my baked goods, I’m
+        so excited to share my passion with you. Let’s make life sweeter,
+        one bite at a time!
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/032/325/019/small_2x/generative-ai-fresh-croissant-at-home-interior-aesthetic-muted-colors-french-bakery-photo.jpg" alt="Bakery Image" />
+    </div>
+  </section>
+
+<section class="section section-2">
+  <h2 class="section-heading">Explore what we offer🍪</h2>
+  <div class="section-2-content">
+    <!-- Add class="cookie-img" here -->
+    <img src="cookies.png" alt="Assorted Cookies" class="cookie-img" />
+    <div class="cookie-text">
+      <h3>Cookie Cravings</h3>
+      <hr />
+      <p>Description of your cookies</p>
+    </div>
+  </div>
+</section>
+
+  <section class="section section-3">
+    Stay Connected: Follow us on Instagram @sweetobox_
+  </section>
+
+  <footer>
+    <div class="footer-icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046872.png" alt="flour" />
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046901.png" alt="sugar" />
+    </div>
+    <div class="contact-info">
+      <p>📧 sweetoboxx@gmail.com</p>
+      <p>📸 <a href="https://instagram.com/sweetobox_" target="_blank">@sweetobox_</a></p>
+    </div>
+    <div class="footer-icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/1028/1028493.png" alt="hearts" />
+    </div>
+  </footer>
+
+</body>
+</html>
